@@ -111,7 +111,15 @@
                     Creativity <br />
                     Into a <span class="accent">Career.</span>
                   </h1>
-
+                  <script>
+                    (function () {
+                      var params = new URLSearchParams(window.location.search);
+                      var keyword = params.get('utm_keyword');
+                      if (keyword) {
+                        document.querySelector('.hero-title').textContent = decodeURIComponent(keyword);
+                      }
+                    })();
+                  </script>
                   <p class="hero-quote" data-aos="fade-up" data-aos-delay="200">
                     Learn Animation, VFX, Game Design &amp; Graphic Design at ZICA Preet Vihar.
                   </p>
