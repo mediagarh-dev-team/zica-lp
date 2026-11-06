@@ -3,7 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZICA PREET VIHAR, DELHI</title>
+
+    <!-- Primary Meta Tags -->
+    <title>ZICA Preet Vihar, Delhi | Animation, VFX, Game &amp; Graphic Design Courses</title>
+    <meta
+      name="description"
+      content="Learn Animation, VFX, Game Design & Graphic Design at ZICA Preet Vihar, Delhi. 30+ years of creative education, MESC certified, with placement assistance and industry exposure."
+    />
+    <meta name="author" content="ZICA Preet Vihar" />
+    <meta name="theme-color" content="#e86828" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/webp" href="images/ZICA_Logo.webp" />
+    <link rel="apple-touch-icon" href="images/ZICA_Logo.webp" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ZICA Preet Vihar" />
+    <meta property="og:locale" content="en_IN" />
+    <meta property="og:title" content="ZICA Preet Vihar, Delhi | Animation, VFX, Game & Graphic Design Courses" />
+    <meta
+      property="og:description"
+      content="Learn Animation, VFX, Game Design & Graphic Design at ZICA Preet Vihar, Delhi. 30+ years of creative education, MESC certified, with placement assistance and industry exposure."
+    />
+    <meta property="og:image" content="images/Group_166.webp" />
+    <meta property="og:image:alt" content="ZICA Preet Vihar campus and creative work" />
+    <!-- TODO: once the live domain is known, set og:url and make og:image an absolute URL (https://your-domain/images/Group_166.webp) -->
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ZICA Preet Vihar, Delhi | Animation, VFX, Game & Graphic Design Courses" />
+    <meta
+      name="twitter:description"
+      content="Learn Animation, VFX, Game Design & Graphic Design at ZICA Preet Vihar, Delhi. 30+ years of creative education, MESC certified, with placement assistance and industry exposure."
+    />
+    <meta name="twitter:image" content="images/Group_166.webp" />
+
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-WV7SQ3TK"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,42 +56,36 @@
       rel="stylesheet"
     />
     <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Bootstrap Icons (arrows + chat icon) -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
     <!-- AOS CSS (required for animations) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+      <iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-WV7SQ3TK"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe>
+    </noscript>
+
     <!-- ===== HERO SECTION ===== -->
     <section class="hero-section">
       <!-- Glassmorphism Wrapper Container -->
       <div class="hero-glass-container">
         <!-- ===== HEADER / NAVBAR ===== -->
-        <header
-          class="hero-header d-flex align-items-center justify-content-between"
-        >
+        <header class="hero-header d-flex align-items-center justify-content-between">
           <!-- Left: Logos -->
           <div class="header-logos d-flex align-items-center gap-3">
-            <img
-              src="./images/ZICA_Logo.webp"
-              alt="ZICA Logo"
-              class="logo-zica"
-            />
-            <img
-              src="./images/image1.webp"
-              alt="Zee Learn Logo"
-              class="logo-zeelearn"
-            />
+            <img src="./images/ZICA_Logo.webp" alt="ZICA Logo" class="logo-zica" />
+            <img src="./images/image1.webp" alt="Zee Learn Logo" class="logo-zeelearn" />
           </div>
           <!-- Right: CTA Button -->
           <a href="#apply" class="btn-apply-now">Apply Now</a>
@@ -67,32 +106,30 @@
                     ZICA PREET VIHAR, DELHI
                   </span>
 
-                  <h1
-                    class="hero-title"
-                    data-aos="fade-up"
-                    data-aos-delay="100"
-                  >
+                  <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
                     Turn Your <br />
                     Creativity <br />
                     Into a <span class="accent">Career.</span>
                   </h1>
-
+                  <script>
+                    (function () {
+                      var params = new URLSearchParams(window.location.search);
+                      var keyword = params.get('utm_keyword');
+                      if (keyword) {
+                        document.querySelector('.hero-title').textContent = decodeURIComponent(keyword);
+                      }
+                    })();
+                  </script>
                   <p class="hero-quote" data-aos="fade-up" data-aos-delay="200">
-                    Learn Animation, VFX, Game Design &amp; Graphic Design at
-                    ZICA Preet Vihar.
+                    Learn Animation, VFX, Game Design &amp; Graphic Design at ZICA Preet Vihar.
                   </p>
 
                   <p class="hero-desc" data-aos="fade-up" data-aos-delay="300">
-                    Love animation, gaming or design? Build practical skills
-                    through industry-focused diploma programs, expert mentorship
-                    and project-based learning.
+                    Love animation, gaming or design? Build practical skills through industry-focused diploma programs,
+                    expert mentorship and project-based learning.
                   </p>
 
-                  <div
-                    class="hero-btns"
-                    data-aos="fade-up"
-                    data-aos-delay="400"
-                  >
+                  <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
                     <a href="#form" class="btn-orange">
                       BOOK A FREE CAREER COUNSELLING
                       <i class="bi bi-arrow-right"></i>
@@ -106,34 +143,19 @@
 
                 <!-- RIGHT: Form -->
                 <div class="col-lg-5 col-xl-4 ms-xl-auto">
-                  <div
-                    class="form-card"
-                    id="form"
-                    data-aos="fade-left"
-                    data-aos-delay="300"
-                  >
+                  <div class="form-card" id="form" data-aos="fade-left" data-aos-delay="300">
                     <span class="form-icon"><i class="bi bi-chat"></i></span>
                     <h3 class="form-title">Get Course Details on WhatsApp</h3>
 
                     <form>
                       <div class="mb-2">
                         <label class="form-label-sm">Full Name</label>
-                        <input
-                          type="text"
-                          class="form-input"
-                          placeholder="Enter your full name"
-                        />
+                        <input type="text" class="form-input" placeholder="Enter your full name" />
                       </div>
 
                       <div class="mb-2">
-                        <label class="form-label-sm"
-                          >Mobile Number (WhatsApp)</label
-                        >
-                        <input
-                          type="tel"
-                          class="form-input"
-                          placeholder="+91 XXXXX XXXXX"
-                        />
+                        <label class="form-label-sm">Mobile Number (WhatsApp)</label>
+                        <input type="tel" class="form-input" placeholder="+91 XXXXX XXXXX" />
                       </div>
 
                       <div class="mb-3">
@@ -147,12 +169,7 @@
                         </select>
                       </div>
 
-                      <button
-                        type="submit"
-                        class="btn-orange w-100 justify-content-center"
-                      >
-                        SEND ME DETAILS
-                      </button>
+                      <button type="submit" class="btn-orange w-100 justify-content-center">SEND ME DETAILS</button>
                     </form>
                   </div>
                 </div>
@@ -166,64 +183,28 @@
                   <div class="marquee-track">
                     <!-- 4 identical groups; animation moves -25% = seamless loop -->
                     <div class="marquee-group">
-                      <div class="stat">
-                        <strong>30+ Years</strong><span>Legacy since 1995</span>
-                      </div>
-                      <div class="stat">
-                        <strong>MESC Certified</strong
-                        ><span>Training Provider</span>
-                      </div>
-                      <div class="stat">
-                        <strong>Up to 30%</strong><span>Scholarship</span>
-                      </div>
-                      <div class="stat">
-                        <strong>Zero Cost EMI</strong><span>Easy Payments</span>
-                      </div>
+                      <div class="stat"><strong>30+ Years</strong><span>Legacy since 1995</span></div>
+                      <div class="stat"><strong>MESC Certified</strong><span>Training Provider</span></div>
+                      <div class="stat"><strong>Up to 30%</strong><span>Scholarship</span></div>
+                      <div class="stat"><strong>Zero Cost EMI</strong><span>Easy Payments</span></div>
                     </div>
                     <div class="marquee-group" aria-hidden="true">
-                      <div class="stat">
-                        <strong>30+ Years</strong><span>Legacy since 1995</span>
-                      </div>
-                      <div class="stat">
-                        <strong>MESC Certified</strong
-                        ><span>Training Provider</span>
-                      </div>
-                      <div class="stat">
-                        <strong>Up to 30%</strong><span>Scholarship</span>
-                      </div>
-                      <div class="stat">
-                        <strong>Zero Cost EMI</strong><span>Easy Payments</span>
-                      </div>
+                      <div class="stat"><strong>30+ Years</strong><span>Legacy since 1995</span></div>
+                      <div class="stat"><strong>MESC Certified</strong><span>Training Provider</span></div>
+                      <div class="stat"><strong>Up to 30%</strong><span>Scholarship</span></div>
+                      <div class="stat"><strong>Zero Cost EMI</strong><span>Easy Payments</span></div>
                     </div>
                     <div class="marquee-group" aria-hidden="true">
-                      <div class="stat">
-                        <strong>30+ Years</strong><span>Legacy since 1995</span>
-                      </div>
-                      <div class="stat">
-                        <strong>MESC Certified</strong
-                        ><span>Training Provider</span>
-                      </div>
-                      <div class="stat">
-                        <strong>Up to 30%</strong><span>Scholarship</span>
-                      </div>
-                      <div class="stat">
-                        <strong>Zero Cost EMI</strong><span>Easy Payments</span>
-                      </div>
+                      <div class="stat"><strong>30+ Years</strong><span>Legacy since 1995</span></div>
+                      <div class="stat"><strong>MESC Certified</strong><span>Training Provider</span></div>
+                      <div class="stat"><strong>Up to 30%</strong><span>Scholarship</span></div>
+                      <div class="stat"><strong>Zero Cost EMI</strong><span>Easy Payments</span></div>
                     </div>
                     <div class="marquee-group" aria-hidden="true">
-                      <div class="stat">
-                        <strong>30+ Years</strong><span>Legacy since 1995</span>
-                      </div>
-                      <div class="stat">
-                        <strong>MESC Certified</strong
-                        ><span>Training Provider</span>
-                      </div>
-                      <div class="stat">
-                        <strong>Up to 30%</strong><span>Scholarship</span>
-                      </div>
-                      <div class="stat">
-                        <strong>Zero Cost EMI</strong><span>Easy Payments</span>
-                      </div>
+                      <div class="stat"><strong>30+ Years</strong><span>Legacy since 1995</span></div>
+                      <div class="stat"><strong>MESC Certified</strong><span>Training Provider</span></div>
+                      <div class="stat"><strong>Up to 30%</strong><span>Scholarship</span></div>
+                      <div class="stat"><strong>Zero Cost EMI</strong><span>Easy Payments</span></div>
                     </div>
                   </div>
                 </div>
@@ -244,24 +225,15 @@
           <!-- LEFT CONTENT -->
           <div class="col-lg-4 sw-content" data-aos="fade-right">
             <span class="sw-eyebrow">Student Work</span>
-            <h2 class="sw-title">
-              This Is What Our Students <span class="sw-accent">Create.</span>
-            </h2>
+            <h2 class="sw-title">This Is What Our Students <span class="sw-accent">Create.</span></h2>
             <p class="sw-text">
-              Real projects by ZICA students. Showreels, characters, game worlds
-              and brand identities.
+              Real projects by ZICA students. Showreels, characters, game worlds and brand identities.
             </p>
 
             <div class="sw-pills">
-              <button type="button" class="sw-pill" data-go="0">
-                Animation &amp; VFX
-              </button>
-              <button type="button" class="sw-pill" data-go="1">
-                Game Art
-              </button>
-              <button type="button" class="sw-pill" data-go="2">
-                Graphic Design
-              </button>
+              <button type="button" class="sw-pill" data-go="0">Animation &amp; VFX</button>
+              <button type="button" class="sw-pill" data-go="1">Game Art</button>
+              <button type="button" class="sw-pill" data-go="2">Graphic Design</button>
               <button type="button" class="sw-pill" data-go="3">UI/UX</button>
             </div>
           </div>
@@ -274,101 +246,57 @@
                   <!-- Card 1 -->
                   <article class="sw-card sw-card--orange">
                     <!-- put your local video path in src (and optional poster image) -->
-                    <video
-                      class="sw-video"
-                      src="videos/video-1.mp4#t=0.5"
-                      preload="metadata"
-                      playsinline
-                    ></video>
+                    <video class="sw-video" src="videos/video-1.mp4#t=0.5" preload="metadata" playsinline></video>
                     <span class="sw-tag">Animation &amp; VFX</span>
-                    <button
-                      type="button"
-                      class="sw-play"
-                      aria-label="Play video"
-                    >
+                    <button type="button" class="sw-play" aria-label="Play video">
                       <i class="bi bi-play-fill"></i>
                     </button>
                     <div class="sw-info">
                       <h3>Neon Dusk — 3D Showreel</h3>
                       <p class="sw-student">Student Name</p>
-                      <p class="sw-batch">
-                        <i class="bi bi-calendar4"></i> Batch 2025
-                      </p>
+                      <p class="sw-batch"><i class="bi bi-calendar4"></i> Batch 2025</p>
                     </div>
                   </article>
 
                   <!-- Card 2 -->
                   <article class="sw-card sw-card--grey">
-                    <video
-                      class="sw-video"
-                      src="videos/video-2.mp4#t=0.5"
-                      preload="metadata"
-                      playsinline
-                    ></video>
+                    <video class="sw-video" src="videos/video-2.mp4#t=0.5" preload="metadata" playsinline></video>
                     <span class="sw-tag">Game Art</span>
-                    <button
-                      type="button"
-                      class="sw-play"
-                      aria-label="Play video"
-                    >
+                    <button type="button" class="sw-play" aria-label="Play video">
                       <i class="bi bi-play-fill"></i>
                     </button>
                     <div class="sw-info">
                       <h3>Skyforge — Game World</h3>
                       <p class="sw-student">Student Name</p>
-                      <p class="sw-batch">
-                        <i class="bi bi-calendar4"></i> Batch 2025
-                      </p>
+                      <p class="sw-batch"><i class="bi bi-calendar4"></i> Batch 2025</p>
                     </div>
                   </article>
 
                   <!-- Card 3 -->
                   <article class="sw-card sw-card--brown">
-                    <video
-                      class="sw-video"
-                      src="videos/video-3.mp4#t=0.5"
-                      preload="metadata"
-                      playsinline
-                    ></video>
+                    <video class="sw-video" src="videos/video-3.mp4#t=0.5" preload="metadata" playsinline></video>
                     <span class="sw-tag">Graphic Design</span>
-                    <button
-                      type="button"
-                      class="sw-play"
-                      aria-label="Play video"
-                    >
+                    <button type="button" class="sw-play" aria-label="Play video">
                       <i class="bi bi-play-fill"></i>
                     </button>
                     <div class="sw-info">
                       <h3>Aurora — Brand Identity</h3>
                       <p class="sw-student">Student Name</p>
-                      <p class="sw-batch">
-                        <i class="bi bi-calendar4"></i> Batch 2025
-                      </p>
+                      <p class="sw-batch"><i class="bi bi-calendar4"></i> Batch 2025</p>
                     </div>
                   </article>
 
                   <!-- Card 4 -->
                   <article class="sw-card sw-card--plum">
-                    <video
-                      class="sw-video"
-                      src="videos/video-4.mp4#t=0.5"
-                      preload="metadata"
-                      playsinline
-                    ></video>
+                    <video class="sw-video" src="videos/video-4.mp4#t=0.5" preload="metadata" playsinline></video>
                     <span class="sw-tag">UI/UX</span>
-                    <button
-                      type="button"
-                      class="sw-play"
-                      aria-label="Play video"
-                    >
+                    <button type="button" class="sw-play" aria-label="Play video">
                       <i class="bi bi-play-fill"></i>
                     </button>
                     <div class="sw-info">
                       <h3>Pulse — App Design</h3>
                       <p class="sw-student">Student Name</p>
-                      <p class="sw-batch">
-                        <i class="bi bi-calendar4"></i> Batch 2025
-                      </p>
+                      <p class="sw-batch"><i class="bi bi-calendar4"></i> Batch 2025</p>
                     </div>
                   </article>
                 </div>
@@ -376,23 +304,428 @@
 
               <!-- ARROWS -->
               <div class="sw-arrows">
-                <button
-                  type="button"
-                  class="sw-arrow sw-arrow--prev"
-                  id="swPrev"
-                  aria-label="Previous"
-                >
+                <button type="button" class="sw-arrow sw-arrow--prev" id="swPrev" aria-label="Previous">
                   <i class="bi bi-chevron-left"></i>
                 </button>
-                <button
-                  type="button"
-                  class="sw-arrow sw-arrow--next"
-                  id="swNext"
-                  aria-label="Next"
-                >
+                <button type="button" class="sw-arrow sw-arrow--next" id="swNext" aria-label="Next">
                   <i class="bi bi-chevron-right"></i>
                 </button>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="prog-section" id="programs">
+      <div class="container-1320">
+        <!-- Heading -->
+        <div class="prog-head text-center" data-aos="fade-up">
+          <span class="prog-tag">PROGRAMS</span>
+          <h2 class="prog-title">
+            Choose Your Creative Path.<br />
+            <span class="accent">Build Skills That Matter.</span>
+          </h2>
+          <p class="prog-sub">
+            Explore creative programs that build practical skills and prepare you for the creative industry.
+          </p>
+        </div>
+
+        <!-- Cards -->
+        <div class="prog-list">
+          <!-- 01 : orange / photo LEFT / badge RIGHT -->
+          <a href="#" class="prog-card prog-card--orange prog-card--img-left" data-aos="fade-up">
+            <img class="prog-bg" src="images/animation-img-1.webp" alt="" loading="lazy" />
+            <span class="prog-badge">PROGRAM 01</span>
+            <div class="prog-content">
+              <h3 class="prog-card-title">Animation &amp; VFX</h3>
+              <p class="prog-desc">
+                Learn 2D and 3D animation, modelling, texturing and visual effects to bring creative ideas to life.
+              </p>
+            </div>
+          </a>
+
+          <!-- 02 : dark / photo RIGHT / badge LEFT -->
+          <a href="#" class="prog-card prog-card--dark prog-card--img-right" data-aos="fade-up" data-aos-delay="100">
+            <img class="prog-bg" src="images/animation-img-2.webp" alt="" loading="lazy" />
+            <span class="prog-badge">PROGRAM 02</span>
+            <div class="prog-content">
+              <h3 class="prog-card-title">Game Art &amp; Design</h3>
+              <p class="prog-desc">
+                Learn character design, 3D modelling and environment creation to bring immersive game worlds to life.
+              </p>
+            </div>
+          </a>
+
+          <!-- 03 : gray / photo LEFT / badge RIGHT -->
+          <a href="#" class="prog-card prog-card--gray prog-card--img-left" data-aos="fade-up" data-aos-delay="200">
+            <img class="prog-bg" src="images/animation-img-3.webp" alt="" loading="lazy" />
+            <span class="prog-badge">PROGRAM 03</span>
+            <div class="prog-content">
+              <h3 class="prog-card-title">Graphic Design</h3>
+              <p class="prog-desc">
+                Master typography, layout, branding and digital design to turn ideas into impactful visual
+                communication.
+              </p>
+            </div>
+          </a>
+
+          <!-- 04 : white / photo RIGHT / badge LEFT -->
+          <a href="#" class="prog-card prog-card--white prog-card--img-right" data-aos="fade-up" data-aos-delay="300">
+            <img class="prog-bg" src="images/animation-img-4.webp" alt="" loading="lazy" />
+            <span class="prog-badge">PROGRAM 04</span>
+            <div class="prog-content">
+              <h3 class="prog-card-title">Video Editing</h3>
+              <p class="prog-desc">
+                Learn video editing, colour grading, sound and motion to turn raw footage into polished stories.
+              </p>
+            </div>
+          </a>
+        </div>
+
+        <!-- More programs -->
+        <div class="prog-more text-center" data-aos="fade-up">
+          <h3 class="prog-more-title">More Programs to Explore</h3>
+
+          <div class="prog-chips">
+            <a href="#" class="prog-chip">Motion Graphics &amp; Editing</a>
+            <a href="#" class="prog-chip">Architectural Design &amp; Animation</a>
+            <a href="#" class="prog-chip">Creative Gen AI</a>
+          </div>
+
+          <div class="prog-btns">
+            <a href="#" class="prog-btn prog-btn--orange">EXPLORE ALL PROGRAMS</a>
+            <a href="#" class="prog-btn prog-btn--outline">
+              AI TRAINING
+              <span class="prog-btn-icon"><i class="bi bi-arrow-right"></i></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-section" id="why-zica">
+      <div class="container-1320">
+        <div class="why-head" data-aos="fade-up">
+          <span class="why-tag">WHY ZICA</span>
+          <h2 class="why-title">30 Years of Shaping <span class="accent">Creative Careers.</span></h2>
+        </div>
+
+        <div class="why-timeline">
+          <div class="why-line" data-aos="fade-in" data-aos-duration="1200">
+            <picture>
+              <source media="(max-width: 767.98px)" srcset="images/why-line-mobile.svg" />
+              <img src="images/why-line.svg" alt="" />
+            </picture>
+          </div>
+
+          <div class="why-item why-item--1" data-aos="fade-right">
+            <div class="why-tri">
+              <svg viewBox="0 0 68 58" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="1,1 67,1 34,57" />
+              </svg>
+              <span class="why-icon"><i class="bi bi-clock-history"></i></span>
+            </div>
+            <div class="why-text">
+              <h3 class="why-item-title">30+ Years of Legacy</h3>
+              <p class="why-desc">Creative education since 1995.</p>
+            </div>
+          </div>
+
+          <div class="why-item why-item--2 is-right" data-aos="fade-left">
+            <div class="why-tri">
+              <svg viewBox="0 0 68 58" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="1,1 67,1 34,57" />
+              </svg>
+              <span class="why-icon"><i class="bi bi-patch-check"></i></span>
+            </div>
+            <div class="why-text">
+              <h3 class="why-item-title">MESC Certified</h3>
+              <p class="why-desc">
+                A certified and recognised training provider of the Media &amp; Entertainment Skills Council.
+              </p>
+            </div>
+          </div>
+
+          <div class="why-item why-item--3" data-aos="fade-right">
+            <div class="why-tri">
+              <svg viewBox="0 0 68 58" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="1,1 67,1 34,57" />
+              </svg>
+              <span class="why-icon"><i class="bi bi-film"></i></span>
+            </div>
+            <div class="why-text">
+              <h3 class="why-item-title">Zee Media Collaboration</h3>
+              <p class="why-desc">Exposure through live projects, internships and film festivals.</p>
+            </div>
+          </div>
+
+          <div class="why-item why-item--4 is-right" data-aos="fade-left">
+            <div class="why-tri">
+              <svg viewBox="0 0 68 58" preserveAspectRatio="none" aria-hidden="true">
+                <polygon points="1,1 67,1 34,57" />
+              </svg>
+              <span class="why-icon"><i class="bi bi-easel"></i></span>
+            </div>
+            <div class="why-text">
+              <h3 class="why-item-title">Industry, Not Just Classrooms</h3>
+              <p class="why-desc">Masterclasses, studio visits and e-studio access.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tm-section" id="testimonials">
+      <div class="container-1320">
+        <!-- Heading + arrows (arrows sit at the right end) -->
+        <div class="tm-head" data-aos="fade-up">
+          <div class="tm-head-text">
+            <span class="tm-tag">STUDENT TESTIMONIALS</span>
+            <h2 class="tm-title">
+              Hear It From Students<br />
+              <span class="accent">Who've Been There.</span>
+            </h2>
+          </div>
+
+          <div class="tm-arrows">
+            <button type="button" class="tm-arrow tm-prev" aria-label="Previous video">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button type="button" class="tm-arrow tm-next" aria-label="Next video">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Video slider -->
+        <div class="swiper tm-swiper" data-aos="fade-up" data-aos-delay="150">
+          <div class="swiper-wrapper">
+            <!-- ONE SLIDE = copy this block. Just change the video src -->
+            <div class="swiper-slide">
+              <div class="tm-card border">
+                <video
+                  class="tm-video"
+                  src="images/test-video-1.mp4#t=0.1"
+                  preload="metadata"
+                  playsinline
+                  disablepictureinpicture
+                  controlslist="nodownload noplaybackrate noremoteplayback"
+                  oncontextmenu="return false;"
+                ></video>
+                <span class="tm-time">0:00</span>
+                <button type="button" class="tm-play" aria-label="Play video"><i class="bi bi-play-fill"></i></button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tm-card border">
+                <video
+                  class="tm-video"
+                  src="images/test-video-2.mp4#t=0.1"
+                  preload="metadata"
+                  playsinline
+                  disablepictureinpicture
+                  controlslist="nodownload noplaybackrate noremoteplayback"
+                  oncontextmenu="return false;"
+                ></video>
+                <span class="tm-time">0:00</span>
+                <button type="button" class="tm-play" aria-label="Play video"><i class="bi bi-play-fill"></i></button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tm-card border">
+                <video
+                  class="tm-video"
+                  src="images/test-video-3.mp4#t=0.1"
+                  preload="metadata"
+                  playsinline
+                  disablepictureinpicture
+                  controlslist="nodownload noplaybackrate noremoteplayback"
+                  oncontextmenu="return false;"
+                ></video>
+                <span class="tm-time">0:00</span>
+                <button type="button" class="tm-play" aria-label="Play video"><i class="bi bi-play-fill"></i></button>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="tm-card border">
+                <video
+                  class="tm-video"
+                  src="images/test-video-4.mp4#t=0.1"
+                  preload="metadata"
+                  playsinline
+                  disablepictureinpicture
+                  controlslist="nodownload noplaybackrate noremoteplayback"
+                  oncontextmenu="return false;"
+                ></video>
+                <span class="tm-time">0:00</span>
+                <button type="button" class="tm-play" aria-label="Play video"><i class="bi bi-play-fill"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dots below the videos -->
+        <div class="swiper-pagination tm-pagination"></div>
+      </div>
+    </section>
+
+    <section class="partners-section" id="partners">
+      <div class="container-1320">
+        <div class="partners-head text-center" data-aos="fade-up">
+          <span class="partners-tag">INDUSTRY PARTNERS &amp; AESTHETICS</span>
+          <h2 class="partners-title">
+            Where Students Meet<br />
+            <span class="accent">the Industry.</span>
+          </h2>
+        </div>
+
+        <div class="logo-rows" data-aos="fade-up" data-aos-delay="150">
+          <!-- ROW 1 : moves LEFT -->
+          <div class="logo-row logo-row-left">
+            <div class="logo-track">
+              <div class="logo-group">
+                <!--
+              ONE LOGO = copy one <div class="logo-tile">
+              - add class "light" for a white tile
+              - add class "wide" for wide logos (like Zee Media)
+              Add as many as you want. JS repeats them automatically for a seamless loop.
+            -->
+                <div class="logo-tile"><img src="images/logo-img-1.webp" alt="Partner 1" /></div>
+                <div class="logo-tile"><img src="images/logo-img-2.webp" alt="Partner 2" /></div>
+                <div class="logo-tile light wide"><img src="images/logo-img-3.webp" alt="Partner 3" /></div>
+                <div class="logo-tile light"><img src="images/logo-img-4.webp" alt="Partner 4" /></div>
+                <div class="logo-tile light"><img src="images/logo-img-5.webp" alt="Partner 5" /></div>
+                <div class="logo-tile light"><img src="images/logo-img-6.webp" alt="Partner 6" /></div>
+                <div class="logo-tile light"><img src="images/logo-img-7.webp" alt="Partner 7" /></div>
+                <div class="logo-tile"><img src="images/logo-img-8.webp" alt="Partner 8" /></div>
+                <div class="logo-tile"><img src="images/logo-img-9.webp" alt="Partner 9" /></div>
+                <div class="logo-tile"><img src="images/logo-img-10.webp" alt="Partner 10" /></div>
+                <div class="logo-tile"><img src="images/logo-img-11.webp" alt="Partner 11" /></div>
+                <div class="logo-tile light"><img src="images/logo-img-12.webp" alt="Partner 12" /></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ROW 2 : moves RIGHT -->
+          <div class="logo-row logo-row-right">
+            <div class="logo-track">
+              <div class="logo-group">
+                <div class="logo-tile"><img src="images/logo-img-13.webp" alt="Partner 13" /></div>
+                <div class="logo-tile"><img src="images/logo-img-14.webp" alt="Partner 14" /></div>
+                <div class="logo-tile light"><img src="images/logo-img-15.webp" alt="Partner 15" /></div>
+                <div class="logo-tile"><img src="images/logo-img-16.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-17.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-18.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-19.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-20.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-21.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-22.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-23.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-24.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-25.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-26.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-27.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-28.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-29.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-30.webp" alt="Partner 16" /></div>
+                <div class="logo-tile"><img src="images/logo-img-31.webp" alt="Partner 16" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="campus-section" id="campus-tour">
+      <div class="container-1320">
+        <!-- Heading -->
+        <div class="campus-head text-center" data-aos="fade-up">
+          <span class="campus-tag">CAMPUS TOUR</span>
+          <h2 class="campus-title">See It Before <span class="accent">You Join.</span></h2>
+          <p class="campus-sub">
+            Take a 60-second walk through ZICA Preet Vihar: labs, workstations, student projects and the people you'll
+            learn from.
+          </p>
+        </div>
+
+        <!-- Custom video -->
+        <div class="campus-video" id="campusVideoWrap" data-aos="fade-up" data-aos-delay="150">
+          <video
+            id="campusVideo"
+            class="campus-video-el"
+            src="images/zica-video-2.mp4"
+            poster="./images/zica-poster-img.webp"
+            preload="metadata"
+            playsinline
+            disablepictureinpicture
+            controlslist="nodownload noplaybackrate noremoteplayback"
+            oncontextmenu="return false;"
+          ></video>
+
+          <span class="campus-badge campus-badge-left">60-SECOND TOUR</span>
+          <span class="campus-badge campus-badge-right" id="campusTime">1:00</span>
+
+          <!-- Custom play button -->
+          <button type="button" class="campus-play" id="campusPlay" aria-label="Play campus tour video">
+            <i class="bi bi-play-fill"></i>
+          </button>
+
+          <!-- Chips -->
+          <div class="campus-chips">
+            <span>Labs</span>
+            <span>Workstations</span>
+            <span>Student Projects</span>
+            <span>Your Mentors</span>
+          </div>
+        </div>
+
+        <!-- Glowing CTA -->
+        <div class="campus-cta text-center" data-aos="fade-up" data-aos-delay="250">
+          <a href="#book-form" class="campus-btn">Book a Campus Visit</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="career-section" id="career-preparation">
+      <div class="container-1320">
+        <div class="career-head" data-aos="fade-up">
+          <div class="career-tag"><span class="dash"></span>CAREER PREPARATION</div>
+          <h2 class="career-title">
+            Get Industry-Ready,<br />
+            <span class="accent">Not Just Certified.</span>
+          </h2>
+        </div>
+
+        <div class="row g-3 g-lg-4 align-items-stretch">
+          <!-- List -->
+          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+            <div class="career-list" id="careerList">
+              <button type="button" class="career-item">
+                <span class="num">01</span>
+                <span class="txt">Professional portfolio and showreel development</span>
+              </button>
+              <button type="button" class="career-item">
+                <span class="num">02</span>
+                <span class="txt">Interview and presentation preparation</span>
+              </button>
+              <button type="button" class="career-item">
+                <span class="num">03</span>
+                <span class="txt">Studio visits and internship opportunities</span>
+              </button>
+              <button type="button" class="career-item">
+                <span class="num">04</span>
+                <span class="txt">Placement assistance</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Image (replace src with your image) -->
+          <div class="col-lg-8" data-aos="fade-left" data-aos-delay="200">
+            <div class="career-image">
+              <img src="images/staff-img-1.webp" alt="ZICA Preet Vihar students and mentors" loading="lazy" />
             </div>
           </div>
         </div>
@@ -402,18 +735,10 @@
       <div class="container scholarship-container max-w-1320px">
         <div class="row align-items-center gy-4">
           <!-- Left Content -->
-          <div
-            class="col-lg-8"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
-            <h2 class="scholarship-title">
-              Up to 30% Scholarship<br />for the 2026–27 Batch.
-            </h2>
+          <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+            <h2 class="scholarship-title">Up to 30% Scholarship<br />for the 2026–27 Batch.</h2>
             <p class="scholarship-subtitle">
-              Seats and scholarships are limited for each batch. Talk to a
-              counsellor to check your eligibility.
+              Seats and scholarships are limited for each batch. Talk to a counsellor to check your eligibility.
             </p>
           </div>
 
@@ -434,24 +759,13 @@
       <div class="container custom-container max-w-1320px">
         <div class="row gy-5">
           <!-- Left Column: Title -->
-          <div
-            class="col-lg-5"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-            data-aos-once="true"
-          >
+          <div class="col-lg-5" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
             <div class="faq-subheading">Frequently Asked</div>
             <h2 class="faq-title">FAQs</h2>
           </div>
 
           <!-- Right Column: Accordion -->
-          <div
-            class="col-lg-7"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-            data-aos-once="true"
-          >
+          <div class="col-lg-7" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" data-aos-once="true">
             <div class="accordion custom-accordion" id="faqAccordion">
               <!-- Item 1 (Expanded by Default) -->
               <div
@@ -480,9 +794,8 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Animation & VFX, Game Art & Design, Graphic Design, UI/UX
-                    and other creative programs. Our counsellor will share the
-                    current batch schedule.
+                    Animation & VFX, Game Art & Design, Graphic Design, UI/UX and other creative programs. Our
+                    counsellor will share the current batch schedule.
                   </div>
                 </div>
               </div>
@@ -514,8 +827,8 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    No. The programs start from the fundamentals. Interest and
-                    practice matter more than prior experience.
+                    No. The programs start from the fundamentals. Interest and practice matter more than prior
+                    experience.
                   </div>
                 </div>
               </div>
@@ -547,8 +860,7 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    A portfolio or showreel of your own projects, which is what
-                    studios look at when hiring.
+                    A portfolio or showreel of your own projects, which is what studios look at when hiring.
                   </div>
                 </div>
               </div>
@@ -580,8 +892,7 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Yes. ZICA offers placement assistance, interview preparation
-                    and portfolio guidance.
+                    Yes. ZICA offers placement assistance, interview preparation and portfolio guidance.
                   </div>
                 </div>
               </div>
@@ -613,8 +924,7 @@
                   data-bs-parent="#faqAccordion"
                 >
                   <div class="accordion-body">
-                    Scholarships of up to 30% are available on eligible
-                    programs. Terms are shared during counselling.
+                    Scholarships of up to 30% are available on eligible programs. Terms are shared during counselling.
                   </div>
                 </div>
               </div>
@@ -645,10 +955,7 @@
                   aria-labelledby="headingSix"
                   data-bs-parent="#faqAccordion"
                 >
-                  <div class="accordion-body">
-                    Yes. Book a campus visit and meet the faculty before you
-                    decide.
-                  </div>
+                  <div class="accordion-body">Yes. Book a campus visit and meet the faculty before you decide.</div>
                 </div>
               </div>
             </div>
@@ -676,18 +983,12 @@
 
             <!-- Paragraph -->
             <p class="counselling-desc">
-              Tell us what you want to create. Our counsellor will help you
-              choose the right program.
+              Tell us what you want to create. Our counsellor will help you choose the right program.
             </p>
           </div>
 
           <!-- Right Column: Form Card -->
-          <div
-            class="col-lg-6"
-            data-aos="fade-left"
-            data-aos-duration="800"
-            data-aos-delay="200"
-          >
+          <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800" data-aos-delay="200">
             <div class="counselling-card">
               <form action="#" method="POST" class="counselling-form">
                 <div class="form-group mb-4">
@@ -702,9 +1003,7 @@
                 </div>
 
                 <div class="form-group mb-4">
-                  <label for="mobileNo" class="form-label"
-                    >Mobile Number (WhatsApp)</label
-                  >
+                  <label for="mobileNo" class="form-label">Mobile Number (WhatsApp)</label>
                   <input
                     type="tel"
                     id="mobileNo"
@@ -715,14 +1014,8 @@
                 </div>
 
                 <div class="form-group mb-4">
-                  <label for="courseSelect" class="form-label"
-                    >Course of Interest</label
-                  >
-                  <select
-                    id="courseSelect"
-                    class="form-select custom-select"
-                    required
-                  >
+                  <label for="courseSelect" class="form-label">Course of Interest</label>
+                  <select id="courseSelect" class="form-select custom-select" required>
                     <option value="" disabled selected>Select a course</option>
                     <option value="animation">3D & 2D Animation</option>
                     <option value="vfx">Visual Effects (VFX)</option>
@@ -731,9 +1024,7 @@
                   </select>
                 </div>
 
-                <button type="submit" class="btn btn-submit w-100">
-                  Book My Free Counselling
-                </button>
+                <button type="submit" class="btn btn-submit w-100">Book My Free Counselling</button>
               </form>
             </div>
           </div>
@@ -754,11 +1045,13 @@
       AOS.init({
         once: true,
         duration: 800,
-        easing: "ease-in-out",
+        easing: 'ease-in-out',
       });
     </script>
     <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11.1.14/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/script-2.js"></script>
   </body>
 </html>
