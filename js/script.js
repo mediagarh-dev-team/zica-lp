@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
       stopAll(card); // only one video at a time
       card.classList.add("is-playing");
       video.controls = true;
-      video.play().catch(() => {});
+      video.play().catch(() => { });
     };
 
     playBtn.addEventListener("click", start);
