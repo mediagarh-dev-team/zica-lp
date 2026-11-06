@@ -1,0 +1,612 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZICA PREET VIHAR, DELHI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons (arrows + chat icon) -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <!-- AOS CSS (required for animations) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+  </head>
+  <body>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero-section">
+      <!-- Glassmorphism Wrapper Container -->
+      <div class="hero-glass-container">
+        <!-- ===== HEADER / NAVBAR ===== -->
+        <header
+          class="hero-header d-flex align-items-center justify-content-between"
+        >
+          <!-- Left: Logos -->
+          <div class="header-logos d-flex align-items-center gap-3">
+            <img
+              src="./images/ZICA_Logo.webp"
+              alt="ZICA Logo"
+              class="logo-zica"
+            />
+            <img
+              src="./images/image1.webp"
+              alt="Zee Learn Logo"
+              class="logo-zeelearn"
+            />
+          </div>
+          <!-- Right: CTA Button -->
+          <a href="#apply" class="btn-apply-now">Apply Now</a>
+        </header>
+
+        <main class="hero-wrap">
+          <!-- Stage: card (with cutout) + strip sit together -->
+          <div class="hero-stage">
+            <!-- Main dark card (taller on the right, cutout bottom-left) -->
+            <div class="hero-card">
+              <div class="row align-items-center gx-lg-5 gy-4 hero-row">
+                <!-- LEFT: Text -->
+                <div class="col-lg-7 hero-left">
+                  <span class="hero-badge" data-aos="fade-down">
+                    <i class="dot"></i>
+                    ADMISSIONS OPEN 2026-27
+                    <span class="sep">·</span>
+                    ZICA PREET VIHAR, DELHI
+                  </span>
+
+                  <h1
+                    class="hero-title"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                  >
+                    Turn Your <br />
+                    Creativity <br />
+                    Into a <span class="accent">Career.</span>
+                  </h1>
+
+                  <p class="hero-quote" data-aos="fade-up" data-aos-delay="200">
+                    Learn Animation, VFX, Game Design &amp; Graphic Design at
+                    ZICA Preet Vihar.
+                  </p>
+
+                  <p class="hero-desc" data-aos="fade-up" data-aos-delay="300">
+                    Love animation, gaming or design? Build practical skills
+                    through industry-focused diploma programs, expert mentorship
+                    and project-based learning.
+                  </p>
+
+                  <div
+                    class="hero-btns"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <a href="#form" class="btn-orange">
+                      BOOK A FREE CAREER COUNSELLING
+                      <i class="bi bi-arrow-right"></i>
+                    </a>
+                    <a href="#work" class="btn-outline-dark2">
+                      SEE STUDENT WORK
+                      <i class="bi bi-arrow-down"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- RIGHT: Form -->
+                <div class="col-lg-5 col-xl-4 ms-xl-auto">
+                  <div
+                    class="form-card"
+                    id="form"
+                    data-aos="fade-left"
+                    data-aos-delay="300"
+                  >
+                    <span class="form-icon"><i class="bi bi-chat"></i></span>
+                    <h3 class="form-title">Get Course Details on WhatsApp</h3>
+
+                    <form>
+                      <div class="mb-2">
+                        <label class="form-label-sm">Full Name</label>
+                        <input
+                          type="text"
+                          class="form-input"
+                          placeholder="Enter your full name"
+                        />
+                      </div>
+
+                      <div class="mb-2">
+                        <label class="form-label-sm"
+                          >Mobile Number (WhatsApp)</label
+                        >
+                        <input
+                          type="tel"
+                          class="form-input"
+                          placeholder="+91 XXXXX XXXXX"
+                        />
+                      </div>
+
+                      <div class="mb-3">
+                        <label class="form-label-sm">Course of Interest</label>
+                        <select class="form-input form-select-custom">
+                          <option selected disabled>Select a course</option>
+                          <option>Animation</option>
+                          <option>VFX</option>
+                          <option>Game Design</option>
+                          <option>Graphic Design</option>
+                        </select>
+                      </div>
+
+                      <button
+                        type="submit"
+                        class="btn-orange w-100 justify-content-center"
+                      >
+                        SEND ME DETAILS
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Strip that lives inside the cutout (desktop) / below card (mobile) -->
+            <div class="hero-bottom" data-aos="fade-up" data-aos-delay="200">
+              <div class="stats-strip">
+                <div class="marquee">
+                  <div class="marquee-track">
+                    <!-- 4 identical groups; animation moves -25% = seamless loop -->
+                    <div class="marquee-group">
+                      <div class="stat">
+                        <strong>30+ Years</strong><span>Legacy since 1995</span>
+                      </div>
+                      <div class="stat">
+                        <strong>MESC Certified</strong
+                        ><span>Training Provider</span>
+                      </div>
+                      <div class="stat">
+                        <strong>Up to 30%</strong><span>Scholarship</span>
+                      </div>
+                      <div class="stat">
+                        <strong>Zero Cost EMI</strong><span>Easy Payments</span>
+                      </div>
+                    </div>
+                    <div class="marquee-group" aria-hidden="true">
+                      <div class="stat">
+                        <strong>30+ Years</strong><span>Legacy since 1995</span>
+                      </div>
+                      <div class="stat">
+                        <strong>MESC Certified</strong
+                        ><span>Training Provider</span>
+                      </div>
+                      <div class="stat">
+                        <strong>Up to 30%</strong><span>Scholarship</span>
+                      </div>
+                      <div class="stat">
+                        <strong>Zero Cost EMI</strong><span>Easy Payments</span>
+                      </div>
+                    </div>
+                    <div class="marquee-group" aria-hidden="true">
+                      <div class="stat">
+                        <strong>30+ Years</strong><span>Legacy since 1995</span>
+                      </div>
+                      <div class="stat">
+                        <strong>MESC Certified</strong
+                        ><span>Training Provider</span>
+                      </div>
+                      <div class="stat">
+                        <strong>Up to 30%</strong><span>Scholarship</span>
+                      </div>
+                      <div class="stat">
+                        <strong>Zero Cost EMI</strong><span>Easy Payments</span>
+                      </div>
+                    </div>
+                    <div class="marquee-group" aria-hidden="true">
+                      <div class="stat">
+                        <strong>30+ Years</strong><span>Legacy since 1995</span>
+                      </div>
+                      <div class="stat">
+                        <strong>MESC Certified</strong
+                        ><span>Training Provider</span>
+                      </div>
+                      <div class="stat">
+                        <strong>Up to 30%</strong><span>Scholarship</span>
+                      </div>
+                      <div class="stat">
+                        <strong>Zero Cost EMI</strong><span>Easy Payments</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Orange slanted bars sitting inside the cutout gap (desktop only) -->
+              <i class="slant-bar slant-bar-1"></i>
+              <i class="slant-bar slant-bar-2"></i>
+            </div>
+          </div>
+        </main>
+      </div>
+      <!-- /hero-glass-container -->
+    </section>
+    <!-- /hero-section -->
+    <section class="scholarship-section">
+      <div
+        class="container scholarship-container max-w-1320px custom-container"
+      >
+        <div class="row align-items-center gy-4">
+          <!-- Left Content -->
+          <div
+            class="col-lg-8"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <h2 class="scholarship-title">
+              Up to 30% Scholarship<br />for the 2026–27 Batch.
+            </h2>
+            <p class="scholarship-subtitle">
+              Seats and scholarships are limited for each batch. Talk to a
+              counsellor to check your eligibility.
+            </p>
+          </div>
+
+          <!-- Right Action Button -->
+          <div
+            class="col-lg-4 text-lg-end text-start"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            <a href="#" class="btn-scholarship">Check My Scholarship</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="faq-section">
+      <div class="container custom-container max-w-1320px">
+        <div class="row gy-5">
+          <!-- Left Column: Title -->
+          <div
+            class="col-lg-5"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-once="true"
+          >
+            <div class="faq-subheading">Frequently Asked</div>
+            <h2 class="faq-title">FAQs</h2>
+          </div>
+
+          <!-- Right Column: Accordion -->
+          <div
+            class="col-lg-7"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-once="true"
+          >
+            <div class="accordion custom-accordion" id="faqAccordion">
+              <!-- Item 1 (Expanded by Default) -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="300"
+                data-aos-once="true"
+              >
+                <h3 class="accordion-header" id="headingOne">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Which programs are available at Preet Vihar?
+                  </button>
+                </h3>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Animation & VFX, Game Art & Design, Graphic Design, UI/UX
+                    and other creative programs. Our counsellor will share the
+                    current batch schedule.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="400"
+                data-aos-once="true"
+              >
+                <h3 class="accordion-header" id="headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Do I need to know drawing or software already?
+                  </button>
+                </h3>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    No prior experience is required. Our programs start from
+                    fundamental basics and build up to advanced software
+                    proficiency.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="500"
+                data-aos-once="true"
+              >
+                <h3 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    What will I have at the end of the course?
+                  </button>
+                </h3>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    You will complete industry-ready portfolio projects, receive
+                    a recognized certification, and gain practical career
+                    exposure.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="600"
+                data-aos-once="true"
+              >
+                <h3 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Is there placement support?
+                  </button>
+                </h3>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Yes, we offer dedicated placement assistance, resume
+                    building, and mock interview sessions with industry
+                    professionals.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="700"
+                data-aos-once="true"
+              >
+                <h3 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    How does the scholarship work?
+                  </button>
+                </h3>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Scholarships are awarded based on talent evaluation tests
+                    and academic background. Talk to our counsellor for
+                    eligibility details.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 6 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-up"
+                data-aos-duration="800"
+                data-aos-delay="800"
+                data-aos-once="true"
+              >
+                <h3 class="accordion-header" id="headingSix">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    Can I visit the campus first?
+                  </button>
+                </h3>
+                <div
+                  id="collapseSix"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSix"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body">
+                    Absolutely! You are welcome to visit our campus during
+                    working hours for a guided tour and live interactive
+                    session.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Free Counselling Section -->
+    <section class="counselling-section">
+      <div class="custom-container max-w-1320px">
+        <div class="row align-items-center gy-5">
+          <!-- Left Column: Content -->
+          <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+            <!-- Subtitle Badge -->
+            <div class="counselling-tag d-flex align-items-center gap-2">
+              <span class="orange-dash"></span>
+              <span class="tag-text">FREE COUNSELLING</span>
+            </div>
+
+            <!-- Title -->
+            <h2 class="counselling-heading">
+              Your First Project Starts <br />
+              <span class="highlight-text">With One Call.</span>
+            </h2>
+
+            <!-- Paragraph -->
+            <p class="counselling-desc">
+              Tell us what you want to create. Our counsellor will help you
+              choose the right program.
+            </p>
+          </div>
+
+          <!-- Right Column: Form Card -->
+          <div
+            class="col-lg-6"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <div class="counselling-card">
+              <form action="#" method="POST" class="counselling-form">
+                <div class="form-group mb-4">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="fullName"
+                    class="form-control custom-input"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="mobileNo" class="form-label"
+                    >Mobile Number (WhatsApp)</label
+                  >
+                  <input
+                    type="tel"
+                    id="mobileNo"
+                    class="form-control custom-input"
+                    placeholder="+91 98XXX XXXXX"
+                    required
+                  />
+                </div>
+
+                <div class="form-group mb-4">
+                  <label for="courseSelect" class="form-label"
+                    >Course of Interest</label
+                  >
+                  <select
+                    id="courseSelect"
+                    class="form-select custom-select"
+                    required
+                  >
+                    <option value="" disabled selected>Select a course</option>
+                    <option value="animation">3D & 2D Animation</option>
+                    <option value="vfx">Visual Effects (VFX)</option>
+                    <option value="gaming">Game Design</option>
+                    <option value="graphic">Graphic Design</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn btn-submit w-100">
+                  Book My Free Counselling
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container text-center max-w-1320px">
+        <p class="footer-copyright">© 2026 ZICA. All rights reserved.</p>
+        <p class="footer-credit">Design and Developed by Mediagarh</p>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // Initialize AOS Animations
+      AOS.init({
+        once: true,
+        duration: 800,
+        easing: "ease-in-out",
+      });
+    </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

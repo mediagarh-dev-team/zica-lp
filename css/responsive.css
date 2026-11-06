@@ -1,0 +1,155 @@
+/* ============ Small laptops ============ */
+@media (max-width: 1399.98px) {
+  .hero-glass-container {
+    padding: 24px 28px 32px;
+  }
+  .hero-card {
+    padding: 40px 40px;
+  }
+}
+
+/* ============ Tablet landscape / small laptop ============ */
+@media (max-width: 1199.98px) {
+  :root {
+    --cut-w: 62%; /* wider cutout so more stats are visible */
+  }
+}
+
+@media (max-width: 991.98px) {
+  .scholarship-title {
+    font-size: 1.85rem;
+  }
+  .scholarship-subtitle {
+    max-width: 100%;
+  }
+  .scholarship-section::after {
+    width: 80%;
+  }
+  .hero-section {
+    padding: 10px;
+  }
+
+  .hero-glass-container {
+    border-radius: 24px;
+    padding: 16px 14px 18px;
+    gap: 18px;
+  }
+
+  .logo-zica,
+  .logo-zeelearn {
+    height: 44px;
+  }
+
+  .btn-apply-now {
+    font-size: 14px;
+    padding: 9px 20px;
+  }
+
+  /* Stage becomes a normal vertical stack */
+  .hero-stage {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero-card {
+    clip-path: none; /* remove cutout */
+    border-radius: 24px; /* all corners */
+    padding: 32px 20px 24px;
+    min-height: auto;
+    display: block;
+    background:
+      linear-gradient(180deg, rgba(8, 8, 8, 0.88) 0%, rgba(8, 8, 8, 0.78) 100%),
+      url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=70")
+        center / cover no-repeat;
+  }
+
+  .hero-left {
+    padding-bottom: 0;
+  }
+
+  .hero-title br {
+    display: none;
+  }
+
+  .hero-quote,
+  .hero-desc {
+    max-width: 100%;
+  }
+
+  .form-card {
+    max-width: 100%;
+    margin: 8px 0 0;
+  }
+
+  /* Marquee strip: below the card, full width */
+  .hero-bottom {
+    position: relative;
+    width: 100%;
+    height: 56px;
+    pointer-events: auto;
+  }
+
+  .stats-strip {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    clip-path: none;
+  }
+
+  .slant-bar {
+    display: none;
+  }
+
+  .marquee {
+    padding-left: 0;
+    -webkit-mask-image: linear-gradient(
+      90deg,
+      transparent 0,
+      #000 6%,
+      #000 94%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      90deg,
+      transparent 0,
+      #000 6%,
+      #000 94%,
+      transparent 100%
+    );
+  }
+}
+
+/* ============ Small phones ============ */
+@media (max-width: 575.98px) {
+  .logo-zica,
+  .logo-zeelearn {
+    height: 34px;
+  }
+
+  .hero-badge {
+    font-size: 9px;
+    padding: 6px 12px;
+    flex-wrap: wrap;
+    border-radius: 16px;
+  }
+
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+  }
+
+  .hero-btns .btn-orange,
+  .hero-btns .btn-outline-dark2 {
+    width: 100%;
+    justify-content: center;
+    font-size: 11.5px;
+  }
+
+  .stat {
+    padding: 0 22px;
+  }
+}
