@@ -120,13 +120,211 @@
   }
 }
 
+/* ============================================================
+   SCHOLARSHIP SECTION
+   ============================================================ */
+
+/* Tablet landscape (≤ 991px) */
+@media (max-width: 991.98px) {
+  .scholarship-title {
+    font-size: 1.85rem;
+  }
+  .scholarship-subtitle {
+    max-width: 100%;
+  }
+  .scholarship-section::after {
+    width: 80%;
+  }
+  /* Button aligns left on stacked layout */
+  .col-lg-4.text-lg-end {
+    text-align: left !important;
+  }
+}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767.98px) {
+  .scholarship-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .scholarship-title {
+    font-size: 1.65rem;
+  }
+  .scholarship-section::after {
+    display: none; /* hide decorative circles, too cluttered on mobile */
+  }
+  .btn-scholarship {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Small phones (≤ 575px) */
+@media (max-width: 575.98px) {
+  .scholarship-title {
+    font-size: 1.45rem;
+  }
+  .scholarship-subtitle {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================================================
+   FAQ SECTION
+   ============================================================ */
+
+/* Tablet landscape (≤ 991px) */
+@media (max-width: 991.98px) {
+  .faq-title {
+    font-size: 2.25rem;
+  }
+}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767.98px) {
+  .faq-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .faq-title {
+    font-size: 2rem;
+  }
+  /* Stack: heading above accordion, reduce gap */
+  .faq-section .row.gy-5 {
+    --bs-gutter-y: 1.5rem;
+  }
+}
+
+/* Small phones (≤ 575px) */
+@media (max-width: 575.98px) {
+  .faq-title {
+    font-size: 1.75rem;
+  }
+  .custom-accordion .accordion-button {
+    font-size: 0.95rem;
+    padding: 14px 0;
+  }
+  .custom-accordion .accordion-body {
+    font-size: 0.875rem;
+  }
+}
+
+/* ============================================================
+   COUNSELLING SECTION
+   ============================================================ */
+
+/* Tablet landscape (≤ 991px) */
+@media (max-width: 991.98px) {
+  .counselling-heading {
+    font-size: 2.5rem;
+  }
+  .counselling-card {
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767.98px) {
+  .counselling-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .counselling-heading {
+    font-size: 2rem;
+  }
+  .counselling-heading br {
+    display: none;
+  }
+  .counselling-desc {
+    font-size: 15px;
+    max-width: 100%;
+  }
+  .counselling-card {
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+}
+
+/* Small phones (≤ 575px) */
+@media (max-width: 575.98px) {
+  .counselling-heading {
+    font-size: 1.75rem;
+  }
+  .counselling-card {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+  .btn-submit {
+    font-size: 14px;
+    padding: 14px;
+  }
+  .custom-input,
+  .custom-select {
+    font-size: 13px;
+    padding: 12px 14px;
+  }
+}
+
+/* ============================================================
+   SITE FOOTER
+   ============================================================ */
+
+/* Tablet (≤ 991px) */
+@media (max-width: 991.98px) {
+  .site-footer {
+    padding-top: 24px;
+    padding-bottom: 32px;
+  }
+}
+
+/* Mobile (≤ 767px) */
+@media (max-width: 767.98px) {
+  .site-footer {
+    padding-top: 20px;
+    padding-bottom: 28px;
+  }
+  .footer-copyright {
+    font-size: 13px;
+  }
+  .footer-credit {
+    font-size: 11px;
+  }
+}
+
+/* Small phones (≤ 575px) */
+@media (max-width: 575.98px) {
+  .site-footer {
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+  .footer-copyright {
+    font-size: 12px;
+  }
+  .footer-credit {
+    font-size: 10px;
+  }
+}
+
+/* ============================================================
+   CUSTOM CONTAINER — collapse horizontal padding on small screens
+   ============================================================ */
+@media (max-width: 767.98px) {
+  .custom-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .custom-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 /* ============ Small phones ============ */
 @media (max-width: 575.98px) {
-  .logo-zica,
-  .logo-zeelearn {
-    height: 34px;
-  }
-
   .hero-badge {
     font-size: 9px;
     padding: 6px 12px;
@@ -151,5 +349,63 @@
 
   .stat {
     padding: 0 22px;
+  }
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+/* Laptop */
+@media (max-width: 1399.98px) {
+  .student-work .custom-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+/* Tablet & below – REMOVE dark cutout */
+@media (max-width: 991.98px) {
+  .student-work {
+    --sw-cards: 2;
+    padding: 60px 0;
+  }
+  .student-work::before,
+  .student-work::after {
+    display: none; /* cutout removed */
+  }
+  .student-work .custom-container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .sw-text,
+  .sw-pills {
+    max-width: 100%;
+  }
+  .sw-arrows {
+    justify-content: center;
+    margin-top: 28px;
+  }
+  /* arrows must be visible on white bg */
+  .sw-arrow--prev {
+    color: #111;
+    border-color: #cfcfcf;
+  }
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  .student-work {
+    --sw-cards: 1;
+    padding: 50px 0;
+  }
+  .student-work .custom-container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .sw-card {
+    aspect-ratio: 3 / 4;
+  }
+  .sw-pill {
+    padding: 8px 16px;
+    font-size: 12px;
   }
 }
