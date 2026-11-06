@@ -553,7 +553,8 @@ body {
   line-height: 1.6;
   color: #a1a1a1;
   max-width: 480px;
-  margin-bottom: 0;
+  margin: auto;
+  margin-bottom: 40px;
 }
 
 /* Card Container */
