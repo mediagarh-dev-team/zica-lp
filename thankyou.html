@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thank You | ZICA PREET VIHAR, DELHI</title>
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      .ty-page {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f7f7f7;
+        padding: 40px 16px;
+      }
+      .ty-card {
+        width: 100%;
+        max-width: 520px;
+        background: #fff;
+        border-radius: 20px;
+        padding: 40px 32px;
+        text-align: center;
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.08);
+      }
+      .ty-icon {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        background: rgba(232, 104, 40, 0.12);
+        color: var(--primary-orange, #e86828);
+        font-size: 36px;
+        display: grid;
+        place-items: center;
+        margin: 0 auto 20px;
+      }
+      .ty-card h1 {
+        font-family: var(--font-Bricolage, "Bricolage Grotesque", sans-serif);
+        font-size: 30px;
+        font-weight: 700;
+        color: #111;
+        margin-bottom: 8px;
+      }
+      .ty-card > p {
+        color: #6b6b6b;
+        font-size: 15px;
+        margin-bottom: 28px;
+      }
+      .ty-details {
+        text-align: left;
+        border: 1px solid #eee;
+        border-radius: 14px;
+        overflow: hidden;
+        margin-bottom: 28px;
+      }
+      .ty-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 14px 18px;
+        font-size: 14px;
+      }
+      .ty-row + .ty-row {
+        border-top: 1px solid #eee;
+      }
+      .ty-label {
+        color: #8a8a8a;
+        flex-shrink: 0;
+      }
+      .ty-value {
+        color: #111;
+        font-weight: 600;
+        text-align: right;
+        word-break: break-word;
+      }
+      .ty-btn {
+        display: inline-block;
+        background: var(--primary-orange, #e86828);
+        color: #fff;
+        border-radius: 50px;
+        padding: 12px 32px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.25s ease;
+      }
+      .ty-btn:hover {
+        background: var(--orange-light, #ff8d4d);
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="ty-page">
+      <div class="ty-card">
+        <div class="ty-icon"><i class="bi bi-check-lg"></i></div>
+        <h1>Thank You!</h1>
+        <p>We have received your details. Our team will contact you shortly.</p>
+
+        <div class="ty-details">
+          <div class="ty-row">
+            <span class="ty-label">Name</span>
+            <span class="ty-value" id="tyName">-</span>
+          </div>
+          <div class="ty-row">
+            <span class="ty-label">Email</span>
+            <span class="ty-value" id="tyEmail">-</span>
+          </div>
+          <div class="ty-row">
+            <span class="ty-label">Phone Number</span>
+            <span class="ty-value" id="tyPhone">-</span>
+          </div>
+        </div>
+
+        <a href="./index.html" class="ty-btn">Back to Home</a>
+      </div>
+    </main>
+
+    <script>
+      (function () {
+        var data = null;
+        try {
+          data = JSON.parse(sessionStorage.getItem("enquiryData"));
+        } catch (e) {}
+
+        // opened directly without submitting the form -> go home
+        if (!data) {
+          window.location.replace("./index.html");
+          return;
+        }
+
+        // textContent = safe, no HTML injection
+        document.getElementById("tyName").textContent = data.name || "-";
+        document.getElementById("tyEmail").textContent = data.email || "-";
+        document.getElementById("tyPhone").textContent = data.phone || "-";
+      })();
+    </script>
+  </body>
+</html>
