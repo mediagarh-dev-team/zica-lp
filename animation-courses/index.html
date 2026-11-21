@@ -191,13 +191,14 @@
                       </div>
 
                       <div class="mb-3">
-                        <label class="form-label-sm">Course of Interest</label>
-                        <select class="form-input form-select-custom" name="course" required>
-                          <option value="" selected disabled>Select a course</option>
-                          <option value="Animation & VFX">Animation &amp; VFX</option>
-                          <option value="Game Design">Game Design</option>
-                          <option value="Graphic Design">Graphic Design</option>
-                          <option value="Video Editing">Video Editing</option>
+                        <label class="form-label-sm">Current Status</label>
+                        <select class="form-input form-select-custom" name="status" required>
+                          <option value="" selected disabled>Select your current status</option>
+                          <option value="Completed 12th">Completed 12th</option>
+                          <option value="Pursuing graduation">Pursuing graduation</option>
+                          <option value="Graduate / Post-graduate">Graduate / Post-graduate</option>
+                          <option value="Working professional">Working professional</option>
+                          <option value="Other">Other</option>
                         </select>
                       </div>
 
@@ -286,13 +287,6 @@
             <p class="sw-text">
               Real projects by ZICA students. Showreels, characters, game worlds and brand identities.
             </p>
-
-            <div class="sw-pills">
-              <span class="sw-pill">Animation &amp; VFX</span>
-              <span class="sw-pill">Game Art</span>
-              <span class="sw-pill">Graphic Design</span>
-              <span class="sw-pill">UI/UX</span>
-            </div>
           </div>
 
           <!-- RIGHT SLIDER -->
@@ -1172,7 +1166,8 @@
               }),
             );
 
-            window.location.href = 'https://admission.zicapreetvihar.com/thankyou';
+            // relative path so it works on any domain/environment
+            window.location.href = '../thankyou';
           } catch (err) {
             msg.style.color = 'red';
             msg.textContent = 'Something went wrong. Please try again.';
