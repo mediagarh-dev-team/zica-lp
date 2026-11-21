@@ -31,7 +31,7 @@
 
   .hero-glass-container {
     border-radius: 24px;
-    padding: 16px 14px 18px;
+    padding: 0;
     gap: 18px;
   }
 
@@ -80,18 +80,20 @@
     margin: 8px 0 0;
   }
 
-  /* Marquee strip: below the card, full width */
+  /* Marquee strip: below the card, full width (height follows content) */
   .hero-bottom {
     position: relative;
+    bottom: auto;
     width: 100%;
-    height: 56px;
+    height: auto;
     pointer-events: auto;
   }
 
   .stats-strip {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: auto;
+    padding: 20px 0;
     border-radius: 18px;
     clip-path: none;
   }
@@ -104,6 +106,13 @@
     padding-left: 0;
     -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
     mask-image: linear-gradient(90deg, transparent 0, #000 6%, #000 94%, transparent 100%);
+  }
+
+  .stat strong {
+    font-size: 24px;
+  }
+  .stat-sep {
+    margin: 0 28px;
   }
 }
 
@@ -143,6 +152,26 @@
   .btn-scholarship {
     width: 100%;
     text-align: center;
+  }
+
+  /* hero strip */
+  .stats-strip {
+    padding: 16px 0;
+  }
+  .stat {
+    gap: 10px;
+  }
+  .stat strong {
+    font-size: 20px;
+  }
+  .stat span {
+    font-size: 8px;
+  }
+  .stat-sep {
+    flex-basis: 12px;
+    width: 12px;
+    height: 12px;
+    margin: 0 22px;
   }
 }
 
@@ -334,8 +363,12 @@
     font-size: 11.5px;
   }
 
-  .stat {
-    padding: 0 22px;
+  /* hero strip (old ".stat { padding: 0 22px }" removed, separator handles spacing now) */
+  .stat strong {
+    font-size: 18px;
+  }
+  .stat-sep {
+    margin: 0 18px;
   }
 }
 

@@ -50,32 +50,27 @@ body {
   max-width: 1320px;
 }
 /* ============================================================
-   HERO SECTION â€” full-bleed background image
+   HERO SECTION — full-bleed background image
    ============================================================ */
 .hero-section {
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url('../images/Group_166.webp') center center / cover no-repeat;
   display: flex;
   align-items: stretch;
-  padding: 20px;
   /* AOS animations (fade-left etc.) start off-screen; clip so no x-scrollbar */
   overflow-x: hidden; /* fallback for old browsers */
   overflow-x: clip;
 }
 
 /* ============================================================
-   GLASSMORPHISM CONTAINER â€” sits on top of the bg image
+   GLASSMORPHISM CONTAINER — sits on top of the bg image
    ============================================================ */
 .hero-glass-container {
   width: 100%;
   border-radius: 30px;
   border: 2px solid var(--glass-border);
-  background: var(--glass-bg);
-  backdrop-filter: blur(var(--glass-blur));
-  -webkit-backdrop-filter: blur(var(--glass-blur));
-  padding: 28px 40px 40px 40px;
+  padding: 28px 40px 110px 40px;
   display: flex;
   flex-direction: column;
   gap: 32px;
@@ -116,14 +111,19 @@ body {
 
 /* Apply Now Button */
 .btn-apply-now {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  padding: 8px 8px 8px 26px;
+  border-radius: 999px;
   background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: #ffffff;
   font-family: var(--font-DMSans);
-  font-size: 18px;
+  font-size: 11px;
   font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   transition:
@@ -131,10 +131,29 @@ body {
     transform 0.2s ease;
 }
 
-.btn-apply-now:hover {
+.btn-apply-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
   background: var(--primary-orange);
   color: #fff;
+  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.btn-apply-now:hover {
+  color: #fff;
   transform: translateY(-1px);
+}
+
+.btn-apply-now:hover .btn-apply-icon {
+  background: var(--orange-light);
+  transform: rotate(45deg);
 }
 
 /* ============================================================
@@ -159,32 +178,15 @@ body {
 .hero-card {
   position: relative;
   width: 100%;
-  border-radius: 28px;
   padding: 48px 56px;
   min-height: 600px;
   display: flex;
   align-items: center;
   /* Replace this URL with your own studio / classroom photo */
-  background:
-    linear-gradient(90deg, rgba(8, 8, 8, 0.94) 0%, rgba(8, 8, 8, 0.82) 45%, rgba(8, 8, 8, 0.45) 100%),
-    url('../images/Photo.webp') center / cover no-repeat;
-
-  /* Cutout shape: full card minus bottom-left notch with "/" slanted edge
-     and a rounded (20px) inner corner on the left                       */
-  clip-path: polygon(
-    0 0,
-    100% 0,
-    100% 100%,
-    var(--cut-w) 100%,
-    calc(var(--cut-w) + var(--slant)) calc(100% - var(--cut-h)),
-    20px calc(100% - var(--cut-h)),
-    14.82px calc(100% - var(--cut-h) - 0.68px),
-    10px calc(100% - var(--cut-h) - 2.68px),
-    5.86px calc(100% - var(--cut-h) - 5.86px),
-    2.68px calc(100% - var(--cut-h) - 10px),
-    0.68px calc(100% - var(--cut-h) - 14.82px),
-    0 calc(100% - var(--cut-h) - 20px)
-  );
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 30px 60px -10px rgba(0, 0, 0, 0.18);
+  background: url('../images/hero-img.webp') top center / cover no-repeat;
 }
 
 .hero-card .hero-row {
@@ -204,8 +206,8 @@ body {
   padding: 7px 16px;
   border-radius: 999px;
   border: 1px solid rgba(255, 255, 255, 0.14);
-  background: rgba(0, 0, 0, 0.45);
-  color: #cfcfcf;
+  background: #ffffff;
+  color: rgba(10, 10, 10, 0.75);
   font-size: 10.5px;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -214,11 +216,11 @@ body {
 }
 
 .hero-badge .dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--primary-orange);
+  width: 14px;
+  height: 14px;
   display: inline-block;
+  vertical-align: middle;
+  object-fit: contain;
 }
 
 .hero-badge .sep {
@@ -229,11 +231,17 @@ body {
 .hero-title {
   font-family: var(--font-Bricolage);
   font-weight: 300;
-  font-size: clamp(2.4rem, 4.6vw, 4.2rem);
-  line-height: 1.08;
+  font-size: clamp(2.2rem, 4.3vw, 3.9rem);
+  line-height: 1.1;
   color: #fff;
   letter-spacing: -0.02em;
+  text-transform: uppercase;
   margin-bottom: 28px;
+}
+
+.hero-title strong {
+  font-weight: 800;
+  color: #fff;
 }
 
 .hero-title .accent {
@@ -392,30 +400,28 @@ body {
 }
 
 /* ============================================================
-   BOTTOM STRIP â€” sits inside the card's cutout (desktop)
+   BOTTOM STRIP — sits inside the card's cutout (desktop)
    ============================================================ */
 .hero-bottom {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -50px;
   width: 100%;
-  height: var(--cut-h);
+  height: 120px;
   pointer-events: none; /* never block clicks on the card */
 }
 
 .stats-strip {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: var(--strip-h);
-  /* right edge is 44px (gap) left of the cutout edge, same slant */
-  width: calc(var(--cut-w) - 14px);
-  background: var(--dark-bg);
+  width: 90%;
+  max-width: 1600px;
   border-radius: 18px 0 0 28px;
   overflow: hidden;
   pointer-events: auto;
-  /* "/" slanted right edge, parallel to the card's cutout edge */
-  clip-path: polygon(0 0, 100% 0, calc(100% - 30px) 100%, 0 100%);
+  margin: 0 auto;
+  border-radius: 28px;
+  background: #fff;
+  box-shadow: 0 20px 50px -8px rgba(0, 0, 0, 0.1);
+  padding: 32px 0px;
 }
 
 /* Orange slanted bars in the gap between strip and card */
@@ -424,7 +430,7 @@ body {
   bottom: 0;
   height: var(--cut-h);
   display: block;
-  /* parallelogram leaning "/" â€” lean = --slant */
+  /* parallelogram leaning "/" — lean = --slant */
   clip-path: polygon(var(--slant) 0, 100% 0, calc(100% - var(--slant)) 100%, 0 100%);
 }
 
@@ -464,30 +470,50 @@ body {
 
 .marquee-group {
   display: flex;
+  align-items: center;
   flex-shrink: 0;
 }
 
 .stat {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 28px;
-  border-right: 1px solid rgba(255, 255, 255, 0.14);
+  align-items: baseline;
+  gap: 14px;
+  padding: 0;
+  border: 0;
   white-space: nowrap;
 }
 
 .stat strong {
   font-family: var(--font-Bricolage);
-  font-size: 15px;
-  font-weight: 700;
-  color: #fff;
-  line-height: 1.2;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  color: #2a2a2a;
+}
+
+.stat.is-accent strong {
+  color: var(--primary-orange);
 }
 
 .stat span {
-  font-size: 9.5px;
-  color: #9a9a9a;
-  line-height: 1.3;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #8a8a8a;
+  line-height: 1;
+}
+
+/* star separator */
+.stat-sep {
+  flex: 0 0 14px;
+  width: 14px;
+  height: 14px;
+  margin: 0 36px;
+  display: block;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14' fill='none'%3E%3Cpath d='M7 0L8.8809 5.1191L14 7L8.8809 8.8809L7 14L5.1191 8.8809L0 7L5.1191 5.1191L7 0Z' fill='%23E86828'/%3E%3C/svg%3E")
+    center / contain no-repeat;
 }
 
 @keyframes marquee {
@@ -806,7 +832,7 @@ body {
   border-color: rgba(255, 255, 255, 0.4);
 }
 /* ===================== STUDENT WORK SECTION =====================
-   Add to css/style.css (desktop) â€“ responsive part is at the bottom,
+   Add to css/style.css (desktop) – responsive part is at the bottom,
    you can move it to css/responsive.css                              */
 
 .student-work {
@@ -1100,7 +1126,7 @@ body {
 }
 
 /* ============================================================
-   SECTION 1 â€” CAMPUS TOUR
+   SECTION 1 — CAMPUS TOUR
    ============================================================ */
 .campus-section {
   background: #0a0a0a;
@@ -1365,7 +1391,7 @@ body {
 }
 
 /* ============================================================
-   SECTION 2 â€” CAREER PREPARATION
+   SECTION 2 — CAREER PREPARATION
    ============================================================ */
 .career-section {
   background: #121212;
@@ -1612,7 +1638,7 @@ body {
 }
 
 /* ============================================================
-   SECTION 1 â€” STUDENT TESTIMONIALS
+   SECTION 1 — STUDENT TESTIMONIALS
    ============================================================ */
 .tm-section {
   background: #fff;
@@ -1818,7 +1844,7 @@ body {
 }
 
 /* ============================================================
-   SECTION 2 â€” INDUSTRY PARTNERS (LOGO MARQUEE)
+   SECTION 2 — INDUSTRY PARTNERS (LOGO MARQUEE)
    ============================================================ */
 .partners-section {
   background: #121212;
@@ -2004,7 +2030,7 @@ body {
 }
 
 /* ============================================================
-   WHY ZICA â€” ZIGZAG TIMELINE (connector = one image)
+   WHY ZICA — ZIGZAG TIMELINE (connector = one image)
    ============================================================ */
 .why-section {
   background: #0a0a0a;
@@ -2764,6 +2790,14 @@ body {
 
   .hero-card .hero-row {
     width: unset;
+  }
+
+  /* hero strip on mobile */
+  .stat strong {
+    font-size: 20px;
+  }
+  .stat-sep {
+    margin: 0 22px;
   }
 }
 
