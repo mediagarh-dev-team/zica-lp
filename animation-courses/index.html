@@ -114,9 +114,9 @@
                   </span>
 
                   <h1 class="hero-title" data-aos="fade-up" data-aos-delay="100">
-                    Turn Your <br />
-                    Creativity <br />
-                    Into a <span class="accent">Career.</span>
+                    Turn Your Imagination <br />
+                    Into a Career <br />
+                    in <span class="accent">3D Animation & VFX.</span>
                   </h1>
                   <script>
                     (function () {
@@ -128,12 +128,12 @@
                     })();
                   </script>
                   <p class="hero-quote" data-aos="fade-up" data-aos-delay="200">
-                    Learn Animation, VFX, Game Design &amp; Graphic Design at ZICA Preet Vihar.
+                    27-Month Professional Development Programme
                   </p>
 
                   <p class="hero-desc" data-aos="fade-up" data-aos-delay="300">
-                    Love animation, gaming or design? Build practical skills through industry-focused diploma programs,
-                    expert mentorship and project-based learning.
+                    Learn 3D modelling, texturing, rigging, animation, lighting, and VFX through practical,
+                    project-based training.
                   </p>
 
                   <div class="hero-btns" data-aos="fade-up" data-aos-delay="400">
@@ -342,62 +342,66 @@
         <div class="prog-list">
           <!-- 01 : orange / photo LEFT / badge RIGHT -->
           <a href="#" class="prog-card prog-card--orange prog-card--img-left" data-aos="fade-up">
-            <img class="prog-bg" src="images/animation-img-1.webp" alt="" loading="lazy" />
+            <img class="prog-bg" src="images/module-img-1.webp" alt="" loading="lazy" />
             <span class="prog-badge">MODULE 01</span>
             <div class="prog-content">
-              <h3 class="prog-card-title">Animation &amp; VFX</h3>
+              <h3 class="prog-card-title">Fundamentals of Art, Design &amp; Computer Graphics</h3>
               <p class="prog-desc">
-                Learn 2D and 3D animation, modelling, texturing and visual effects to bring creative ideas to life.
+                Build your creative foundation through drawing, colour theory, storytelling, character design,
+                storyboarding and computer graphics.
               </p>
+              <span class="prog-duration">6 MONTHS</span>
             </div>
           </a>
 
           <!-- 02 : dark / photo RIGHT / badge LEFT -->
           <a href="#" class="prog-card prog-card--dark prog-card--img-right" data-aos="fade-up" data-aos-delay="100">
-            <img class="prog-bg" src="images/animation-img-2.webp" alt="" loading="lazy" />
+            <img class="prog-bg" src="images/module-img-2.webp" alt="" loading="lazy" />
             <span class="prog-badge">MODULE 02</span>
             <div class="prog-content">
-              <h3 class="prog-card-title">Game Art &amp; Design</h3>
+              <h3 class="prog-card-title">3D Digital Art</h3>
               <p class="prog-desc">
-                Learn character design, 3D modelling and environment creation to bring immersive game worlds to life.
+                Explore 3D modelling, environmental creation, advanced texturing, rendering and look development.
               </p>
+              <span class="prog-duration">6 MONTHS</span>
             </div>
           </a>
 
           <!-- 03 : gray / photo LEFT / badge RIGHT -->
           <a href="#" class="prog-card prog-card--gray prog-card--img-left" data-aos="fade-up" data-aos-delay="200">
-            <img class="prog-bg" src="images/animation-img-3.webp" alt="" loading="lazy" />
+            <img class="prog-bg" src="images/module-img-3.webp" alt="" loading="lazy" />
             <span class="prog-badge">MODULE 03</span>
             <div class="prog-content">
-              <h3 class="prog-card-title">Graphic Design</h3>
-              <p class="prog-desc">
-                Master typography, layout, branding and digital design to turn ideas into impactful visual
-                communication.
-              </p>
+              <h3 class="prog-card-title">Lighting, Animation &amp; Dynamics</h3>
+              <p class="prog-desc">Learn lighting, rigging, 3D character animation, dynamics and motion graphics.</p>
+              <span class="prog-duration">6 MONTHS</span>
             </div>
           </a>
 
           <!-- 04 : white / photo RIGHT / badge LEFT -->
           <a href="#" class="prog-card prog-card--white prog-card--img-right" data-aos="fade-up" data-aos-delay="300">
-            <img class="prog-bg" src="images/animation-img-4.webp" alt="" loading="lazy" />
+            <img class="prog-bg" src="images/module-img-4.webp" alt="" loading="lazy" />
             <span class="prog-badge">MODULE 04</span>
             <div class="prog-content">
-              <h3 class="prog-card-title">Video Editing</h3>
+              <h3 class="prog-card-title">Advanced Dynamics &amp; Visual Effects</h3>
               <p class="prog-desc">
-                Learn video editing, colour grading, sound and motion to turn raw footage into polished stories.
+                Develop advanced skills in simulations, fire and smoke effects, and digital compositing.
               </p>
+              <span class="prog-duration">6 MONTHS</span>
             </div>
           </a>
-          <!-- 05: white / photo RIGHT / badge LEFT -->
+
+          <!-- 05 : gray / photo LEFT / badge RIGHT -->
           <a href="#" class="prog-card prog-card--gray prog-card--img-left" data-aos="fade-up" data-aos-delay="200">
-            <img class="prog-bg" src="images/animation-img-3.webp" alt="" loading="lazy" />
+            <img class="prog-bg" src="images/module-img-5.webp" alt="" loading="lazy" />
             <span class="prog-badge">MODULE 05</span>
             <div class="prog-content">
-              <h3 class="prog-card-title">Graphic Design</h3>
+              <h3 class="prog-card-title">Elective Specialisation</h3>
               <p class="prog-desc">
-                Master typography, layout, branding and digital design to turn ideas into impactful visual
-                communication.
+                Choose your area of focus: Modelling &amp; Texturing, Lighting &amp; Shading, Character Animation, or
+                Visual Effects.
               </p>
+              <span class="prog-duration">3 MONTHS</span>
             </div>
           </a>
         </div>
@@ -1125,6 +1129,7 @@
           msg.textContent = '';
 
           const formData = new FormData(enquiryForm);
+          formData.append('type', 'animation');
 
           try {
             await fetch(SCRIPT_URL, {
@@ -1143,7 +1148,7 @@
               }),
             );
 
-            window.location.href = 'thankyou';
+            window.location.href = 'https://admission.zicapreetvihar.com/thankyou';
           } catch (err) {
             msg.style.color = 'red';
             msg.textContent = 'Something went wrong. Please try again.';

@@ -2396,7 +2396,7 @@ body {
 /* ---- content ---- */
 .prog-content {
   width: 100%;
-  max-width: 530px;
+  max-width: 698px;
   transition: transform 0.4s ease;
 }
 /* photo left -> text + badge on the RIGHT */
@@ -2420,7 +2420,7 @@ body {
 
 .prog-card-title {
   font-family: 'Bricolage Grotesque', sans-serif;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.01em;
@@ -2428,10 +2428,29 @@ body {
   margin: 0 0 8px;
 }
 .prog-desc {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   color: var(--d);
-  margin: 0;
+  margin: 0 0 12px;
+}
+
+.prog-duration {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--t, #0d0d0d);
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 20px;
+  padding: 3px 12px;
+}
+
+/* on white card, flip to a dark pill so it stays readable */
+.prog-card--white .prog-duration {
+  color: var(--primary-orange, #e86828);
+  background: rgba(232, 104, 40, 0.08);
+  border-color: rgba(232, 104, 40, 0.3);
 }
 
 /* ---- program number badge (vertical pill) ---- */
